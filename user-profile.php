@@ -1,104 +1,197 @@
 <?php include_once 'components/navbar.php'  ?>
-
-<div class="container-fluid">
-<div class="col-lg-8 d-flex align-items-stretch">
-      <div class="card w-100">
-        <div class="card-body p-4">
-          <h5 class="card-title fw-semibold mb-4">Your Profile</h5>
-          <div class="table-responsive">
-            <table class="table text-nowrap mb-0 align-middle">
-              <thead class="text-dark fs-4">
-                <tr>
-                  
-                  <th class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">Name</h6>
-                  </th>
-                  <th class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">Name</h6>
-                  </th>
-                  <th class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">Status</h6>
-                  </th>
-                  <th class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">Investment</h6>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-1">Sunil Joshi</h6>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="mb-0 fw-normal">Elite Admin</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="badge bg-primary rounded-3 fw-semibold">Low</span>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0 fs-4">$3.9 M</h6>
-                  </td>
-                </tr>
-                <tr>
-                 
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-1">Andrew McDownland</h6>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="mb-0 fw-normal">Real Homes WP Theme</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="badge bg-secondary rounded-3 fw-semibold">Medium</span>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0 fs-4">$24.5k</h6>
-                  </td>
-                </tr>
-                <tr>
-                
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-1">Christopher Jamil</h6>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="mb-0 fw-normal">MedicalPro WP Theme</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="badge bg-danger rounded-3 fw-semibold">High</span>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0 fs-4">$12.8k</h6>
-                  </td>
-                </tr>
-                <tr>
-                
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-1">Nirav Joshi</h6>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="mb-0 fw-normal">Hosting Press HTML</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <span class="badge bg-success rounded-3 fw-semibold">Critical</span>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0 fs-4">$2.4k</h6>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+<div class="container-xxl flex-grow-1 container-p-y">
+  <div class="main-body">
+    <div class="row gutters-sm">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="assets\images\profile\user-1.jpg" alt="Customer" width="150" height="150"
+                class="rounded-circle">
+              <div class="mt-3">
+                <h4 class="text fs-10">
+                  User Admin </h4>
+                <p class="text fs-15">
+                  User Type : <span>Broker</span> </p>
+                <button type="button" class="btn rounded-pill btn-info" data-bs-toggle="modal"
+                  data-bs-target="#EditModal">Edit
+                  Profile</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-      </div>
+      <div class="col-md-8">
+        <div class="card mb-3 p-3">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-8">
+                <h5 style="color:black">Personal Details</h5>
+              </div>
+            </div>
+            <div class="row border rounded p-3 mb-3">
 
-<?php include_once 'components/footer.php'  ?>
+              <div class="col-sm-9 text-secondary mb-2">
+                <h6 style="display:inline-block; margin-right:20px">Name:</h6>
+                user admin
+              </div>
+              <div class="col-sm-9 text-secondary mb-2">
+                <h6 style="display:inline-block; margin-right:20px ">Email:</h6>
+                useradmin979@gmail.com
+              </div>
+              <div class="col-sm-9 text-secondary mb-2">
+                <h6 style="display:inline-block; margin-right:20px">Mobile:</h6>
+                9555249281
+              </div>
+              <div class="col-sm-9 text-secondary mb-2">
+                <h6 style="display:inline-block; margin-right:15px">Gender:</h6>
+                Male
+              </div>
+              <div class="col-sm-9 text-secondary mb-2">
+                <h6 style="display:inline-block; margin-right:15px">Skype:</h6>@planetsayari
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container card overflow-hidden">
+        <div class="row gx-5 my-4">
+
+          <div class="col">
+            <div class="p-3 ">
+              <h5 class="d-flex align-items-center mb-3" style="color:black">Your address</h5>
+              <div class="row border rounded p-3 mb-3">
+                <div class="col-sm-3 mb-2">
+                  <h6 class="mb-0">Full Address</Address>
+                  </h6>
+                </div>
+                <div class="col-sm-9 text-secondary mb-2">
+                  xyz </div>
+                <div class="col-sm-3 mb-2">
+                  <h6 class="mb-0">City</h6>
+                </div>
+                <div class="col-sm-9 text-secondary mb-2">
+                  xyz </div>
+                <div class="col-sm-3 mb-2">
+                  <h6 class="mb-0">Pincode</Address>
+                  </h6>
+                </div>
+                <div class="col-sm-9 text-secondary mb-2">
+                  2547457</div>
+                <div class="col-sm-3 mb-2">
+                  <h6 class="mb-0">Country</h6>
+                </div>
+                <div class="col-sm-9 text-secondary mb-2">
+                  India </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-3">
+              <h5 class="d-flex align-items-center mb-3" style="color:black">Password
+              </h5>
+              <div class="row border  rounded p-3 " style="padding-bottom:70px !important;">
+                <div class="col-sm-6 mb-2">
+                  <h6 class="mb-0">Current Password </h6>
+                </div>
+                <div class="col-sm-6 text-secondary mb-2">
+                  xxxxxx </div>
+                <div class="col-sm-6 mb-2">
+                  <h6 class="mb-0">New password: </h6>
+                </div>
+                <div class="col-sm-6 text-secondary mb-2">
+                  xxxxx</div>
+                <div class="col-sm-6 mb-2">
+                  <h6 class="mb-0">Confirm new password:</h6>
+                </div>
+                <div class="col-sm-6 text-secondary mb-2">
+                  xxxxx </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal" tabindex="-1">
+        </div>
+
+        <!-- Edit Modal -->
+        <div class="modal fade" id="EditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit profile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form method="POST">
+                  <div class="mb-3">
+                    <label for="inputname" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="inputname" aria-describedby="emailHelp">
+                    <div id="name" class="form-text"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="InputEmail1" class="form-label">Email Address</label>
+                    <input value="" type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="InputEmail1" class="form-label">Mobile
+                      number</label>
+                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="InputEmail1" class="form-label">Gender</label>
+                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="InputPassword1" class="form-label">Skype</label>
+                    <input type="password" class="form-control" id="InputPassword1">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn rounded-pill btn-dark" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn rounded-pill btn-info">Save
+                  changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="DeactivateModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Deactivate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <p>Are you sure want to delete account</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn rounded-pill btn-secondary" data-bs-dismiss="modal">Close</button>
+                <input type="text" name="deactivated" value="0">
+                <input type="submit" name="deactivate" value="Deactivate" class="btn rounded-pill btn-danger ">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer class="content-footer footer bg-footer-theme">
+          <div class="container-xxl flex-wrap text-center py-2 ">
+
+          </div>
+        </footer>
+        <!-- / Footer -->
+
+        <div class="content-backdrop fade"></div>
+      </div>
+      <!-- Content wrapper -->
+    </div>
+
+
+
+    <?php include_once 'components/footer.php'  ?>
